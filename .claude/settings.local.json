@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir d:/projects/fl_electricidad/)",
+      "Bash(command -v ls)",
+      "Bash(/bin/ls d:/projects/fl_electricidad/)",
+      "Bash(powershell.exe -Command \"Get-ChildItem d:/projects/fl_electricidad/\")",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "Bash(npx create-next-app@latest d:/projects/fl_electricidad --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "Bash(powershell.exe -Command \"cd d:/projects/fl_electricidad; npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias ''@/*'' --use-npm --no-turbopack 2>&1\")",
+      "Bash(powershell.exe -Command \"cd d:/projects/fl_electricidad; echo ''no'' | npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias ''@/*'' --use-npm --no-turbopack 2>&1\")",
+      "Bash(powershell.exe -Command \"cd d:/projects/fl_electricidad; Write-Output ''no''; Write-Output ''yes'' | npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias ''@/*'' --use-npm --no-turbopack 2>&1\")",
+      "Bash(powershell.exe -Command \"cd d:/projects/fl_electricidad; npm init -y 2>&1\")",
+      "Bash(powershell.exe -Command \"cd d:/projects/fl_electricidad; npm install next@latest react@latest react-dom@latest 2>&1\")",
+      "Bash(powershell.exe -Command \"cd d:/projects/fl_electricidad; npm install -D typescript @types/react @types/node tailwindcss @tailwindcss/postcss postcss eslint @eslint/eslintrc 2>&1\")",
+      "Bash(powershell.exe -Command \":*)",
+      "Bash(powershell.exe -Command \"Get-ChildItem -Recurse -Directory d:/projects/fl_electricidad/src | Select-Object FullName\")",
+      "Bash(powershell.exe -Command \"cd d:/projects/fl_electricidad; npm run build 2>&1\")"
+    ]
+  }
+}
