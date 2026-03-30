@@ -15,7 +15,8 @@
       "Bash(powershell.exe -Command \"cd d:/projects/fl_electricidad; npm install -D typescript @types/react @types/node tailwindcss @tailwindcss/postcss postcss eslint @eslint/eslintrc 2>&1\")",
       "Bash(powershell.exe -Command \":*)",
       "Bash(powershell.exe -Command \"Get-ChildItem -Recurse -Directory d:/projects/fl_electricidad/src | Select-Object FullName\")",
-      "Bash(powershell.exe -Command \"cd d:/projects/fl_electricidad; npm run build 2>&1\")"
+      "Bash(powershell.exe -Command \"cd d:/projects/fl_electricidad; npm run build 2>&1\")",
+      "Bash(npm install:*)"
     ]
   }
 }
