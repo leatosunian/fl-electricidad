@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const NAV_LINKS = [
   { href: "#", label: "Home", active: true },
@@ -15,14 +16,15 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md">
       <div className="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
-        <div className="flex items-center gap-2">
-          <span className="material-symbols-outlined text-primary text-3xl">
-            bolt
-          </span>
-          <span className="text-2xl font-black text-neutral-900 uppercase font-headline tracking-tight">
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="flex items-center gap-3 cursor-pointer"
+        >
+          <Image src="/logoby.png" alt="FL Electricidad" width={45} height={45} />
+          <span className="text-lg font-black text-neutral-900 uppercase font-headline tracking-tight">
             FL Electricidad
           </span>
-        </div>
+        </button>
 
         <div className="hidden md:flex gap-8 items-center">
           {NAV_LINKS.map((link) => (

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const SOCIAL_LINKS = [
@@ -12,12 +13,10 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 py-12 max-w-7xl mx-auto">
         <div>
           <div className="flex items-center gap-2 mb-6">
-            <span className="material-symbols-outlined text-primary text-xl">
-              bolt
-            </span>
-            <span className="text-lg font-bold text-neutral-900 font-headline uppercase">
+            <Image src="/logoby.png" alt="FL Electricidad" width={120} height={120} />
+            {/* <span className="text-lg font-bold text-neutral-900 font-headline uppercase">
               FL Electricidad
-            </span>
+            </span> */}
           </div>
           <p className="text-xs uppercase tracking-[0.2em] text-neutral-500 mb-2">
             © {new Date().getFullYear()} FL Electricidad. Industrial Precision
